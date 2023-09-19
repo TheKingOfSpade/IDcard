@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
 });
 module.exports = router;
 router.post('/card', function (req, res){
-  console.log(req.body.dateOfBirth)
+  console.log(req.body)
   res.render('card', {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
